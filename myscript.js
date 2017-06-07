@@ -1,4 +1,6 @@
 function onKeyDown(event) {
-    var maxPoint = new Point(view.size.height, view.size.width);
-    new Path.Circle(new Point(100, 100), 10).fillColor = 'red';
+    var maxPoint = new Point(view.size.width, view.size.height);
+    var randomPoint = Point.random();
+    var point = maxPoint * randomPoint;
+    new Path.Circle(point, 10).fillColor = 'red';
 }
