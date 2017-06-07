@@ -1,6 +1,15 @@
+var sound1 = new Howl({
+  src: ['sounds/bubbles.mp3']
+});
+
+var sound2 = new Howl({
+  src: ['sounds/clay.mp3']
+});
+
 var circles = [];
 
 function onKeyDown(event) {
+    sound1.play();
     var maxPoint = new Point(view.size.width, view.size.height);
     var randomPoint = Point.random();
     var point = maxPoint * randomPoint;
